@@ -1,0 +1,166 @@
+:root {
+    --orange : hsl(25, 97%, 53%);
+    --white : hsl(0, 0%, 100%);
+    --light-grey : hsl(217, 12%, 63%);
+    --medium-grey : hsl(216, 12%, 54%);
+    --dark-blue : hsl(213, 19%, 18%);
+    --very-dark-blue : hsl(216, 12%, 8%);
+    --star-bg: hsl(213, 19%, 24%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    min-height: 100%;
+    background-color: var(--very-dark-blue);
+    color: var(--medium-grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.main-container {
+    background-color: var(--dark-blue);
+    width: 90%;
+    border-radius: 25px;
+}
+
+.form-container, .flames-container {
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--star-bg);
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+input {
+    height: 2rem;
+    padding-left: 0.5rem;
+    border-radius: 8px;
+}
+
+input:focus-visible {
+    outline: var(--orange) auto 1px;
+}
+
+.name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+
+}
+.error p {
+    color: red;
+}
+
+.result-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.names {
+    font-size: 1.8rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+.names span {
+    color: var(--white);
+    text-transform: capitalize;
+}
+.result-msg {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.flames-img img {
+    max-width: 100%;
+}
+
+.qoute {
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--star-bg);
+    color: var(--white);
+    border-radius: 12px;
+}
+.qoute p{
+    font-style: oblique;
+    text-align: center;
+}
+
+@media screen and (min-width:900px) {
+    .main-container {
+        width: 30%;
+    }
+    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header p {
+    text-align: center;
+}
+.header p>span {
+    color: var(--white);
+}
+

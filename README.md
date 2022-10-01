@@ -1,1 +1,1 @@
-# flames-calculator
+#Flames Calulator
