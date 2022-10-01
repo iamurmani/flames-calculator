@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <title>FLAMES</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="form-container">
+      <div class="header">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="star">
+        </div>
+        <h2>F.L.A.M.E.S</h2>
+        <p><span>F</span>riend <span>L</span>ove <span>A</span>ffection <span>M</span>arriage <span>E</span>nemy <span>S</span>iblings</p>
+      </div>
+      <div class="form">
+        <div class="name-form">
+          <div class="input-div">
+            <label for="name1">Name 1</label>
+            <input type="text" id="name1" required>
+            <div class="name1-error error"></div>
+          </div>
+          <div class="input-div">
+            <label for="name2">Name 2</label>
+            <input type="text" id="name2" required>
+            <div class="name2-error error"></div>
+          </div>
+          <button id="submitBtn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="flames-container hide">
+    </div>
+  </div>
+  <script src="./script/app.js"></script>
+</body>
+</html>
